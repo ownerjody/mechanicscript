@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanic Tablet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <main class="tablet">
+      <header class="tablet-header">
+        <div>
+          <h1 id="title">Mechanic Tablet</h1>
+          <p id="meta">Framework: open</p>
+        </div>
+        <button id="closeBtn" class="danger">Close</button>
+      </header>
+
+      <section class="profile">
+        <p><strong>Mechanic:</strong> <span id="mechanicName">Unknown</span></p>
+        <p><strong>Status:</strong> <span id="statusBadge" class="online">Online</span></p>
+      </section>
+
+      <section class="actions">
+        <button data-action="inspectVehicle">Inspect Vehicle</button>
+        <button data-action="repairVehicle">Repair Vehicle</button>
+        <button data-action="cleanVehicle">Clean Vehicle</button>
+      </section>
+
+      <section class="panel">
+        <h2>Vehicle Diagnostics</h2>
+        <ul id="vehicleData" class="stats">
+          <li>Plate: <span>-</span></li>
+          <li>Model: <span>-</span></li>
+          <li>Engine: <span>-</span></li>
+          <li>Body: <span>-</span></li>
+          <li>Fuel: <span>-</span></li>
+          <li>Dirt: <span>-</span></li>
+        </ul>
+      </section>
+
+      <p id="feedback" class="feedback">Ready.</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
